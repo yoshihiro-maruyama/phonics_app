@@ -1,19 +1,8 @@
 <% provide(:title, "Home") %>
 <div class="home-page-wrapper">
   <div class="container">
-    <header>
-      <%= link_to root_path, id: "logo" do %>
-        <%= image_tag "abc-phonics-logo.png" %>
-      <% end %>
-      <nav>
-        <ul>
-          <li><%= link_to "About", about_path, class: "about" %></li>
-        </ul>
-      </nav>
-    </header>
+  <%= render 'layouts/header' %>
     <a href="" class="btn btn--yellow btn--border-dotted">スタート！</a>
   </div>
 </div>
-<footer>
-  <small>___ © 2020 Y.Maruyama ____</small>
-</footer>
+<%= render 'layouts/footer' %>

@@ -91,3 +91,24 @@ a.btn--yellow.btn--border-dotted {
   width: 250px;
 }
 
+/* about page */
+.about-page-wrapper {
+  background-image: url(abc-phonics-about.png);
+  background-size: cover;
+  height: 650px;
+}
+
+.message-wrapper {
+  width: 650px;
+  margin: 70px 0 50px 300px;
+  font-family: var(--japanese);
+  color: #252525;
+}
+
+.message-wrapper h1 {
+  font-size: 35px;
+}
+
+.message-wrapper p {
+  font-size: 15px;
+}
