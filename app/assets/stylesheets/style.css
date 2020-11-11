@@ -1,0 +1,93 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding: 0 10px 0 10px;
+}
+
+:root {
+  --japanese: Hiragino Maru Gothic ProN;
+  --english: Comic Sans MS;
+}
+
+/* header */
+header {
+  padding: 20px 0 10px 0;
+}
+
+#logo {
+  float: left;
+}
+
+#logo img {
+  width: 100px;
+}
+
+.about {
+  font-size: 20px;
+  padding:10px 0 0 50px;
+  font-family: var(--english);
+  text-decoration: none;
+  color: purple;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* home page */
+.home-page-wrapper {
+  background-image: url(abc-phonics-top.png);
+  background-size: cover;
+  height: 650px;
+}
+
+a.btn--yellow.btn--border-dotted {
+  border: 3px dotted #000;
+  background-color: yellow;
+  font-family: var(--japanese);
+  margin-top: 330px;
+  margin-left: 240px;
+  width: 250px;
+}
+
