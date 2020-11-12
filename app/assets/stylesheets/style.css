@@ -79,15 +79,15 @@ footer {
 .home-page-wrapper {
   background-image: url(abc-phonics-top.png);
   background-size: cover;
-  height: 650px;
+  height: 700px;
 }
 
 a.btn--yellow.btn--border-dotted {
   border: 3px dotted #000;
   background-color: yellow;
   font-family: var(--japanese);
-  margin-top: 330px;
-  margin-left: 240px;
+  margin-top: 350px;
+  margin-left: 280px;
   width: 250px;
 }
 
@@ -95,7 +95,7 @@ a.btn--yellow.btn--border-dotted {
 .about-page-wrapper {
   background-image: url(abc-phonics-about.png);
   background-size: cover;
-  height: 650px;
+  height: 700px;
 }
 
 .message-wrapper {
