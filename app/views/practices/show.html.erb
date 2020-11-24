@@ -1,0 +1,18 @@
+<% provide(:title, "practice") %>
+<div class="practice-page-wrapper">
+  <div class="container">
+    <%= render 'layouts/header' %>
+    <div class="alphabet" onclick="audioAlphabet();">
+      <i class="fas fa-volume-up"></i>
+      <h1><%= @alphabet.name %></h1>
+    </div>
+    <div class="alphabet-image" onclick="audioPractice();">
+      <i class="fas fa-volume-up"></i>
+      <%= image_tag "apple.png" %>
+      <h2>apple</h2>
+    </div>
+    <%= audio_tag("#{@alphabet.sound}", id:"audio") %>
+    <%= audio_tag("apple.mp3", id:"audio-1") %>
+  </div>
+</div>
+<%= render 'layouts/footer' %>
