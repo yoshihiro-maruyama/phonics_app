@@ -4,7 +4,7 @@
     <%= render 'layouts/header' %>
     <div class="alphabet" onclick="audioAlphabet();">
       <i class="fas fa-volume-up"></i>
-      <h1><%= @alphabet.name %></h1>
+      <h1 class="<%= @alphabet.name %>"><%= @alphabet.name %></h1>
     </div>
     <% @practices.each do |practice| %>
       <div class="alphabet-image" onclick="audioPractice();">
@@ -13,9 +13,9 @@
         <h2><%= practice.name %></h2>
       </div>
     <% end %>
-    <%= audio_tag("#{@alphabet.sound}", id:"audio") %>
+    <%= audio_tag("#{@alphabet.sound}", id:"audio-alphabet") %>
     <% @practices.each do |practice| %>
-      <%= audio_tag("#{practice.sound}", id:"audio-1") %>
+      <%= audio_tag("#{practice.sound}", id:"audio-practice") %>
     <% end %>
   </div>
 </div>

@@ -149,7 +149,6 @@ a.btn--yellow.btn--border-dotted:hover {
 .alphabet h1{
   font-family: var(--english);
   font-size: 50px;
-  color: #EE0000;
   text-align: center;
 }
 
@@ -158,8 +157,7 @@ a.btn--yellow.btn--border-dotted:hover {
   display: inline-block;
   margin: 100px 0 0 200px;
   border-radius: 10px;
-  width: 300px;
-  height: 300px;
+  width: 350px;
   padding: 10px;
   text-align: center;
   position: relative;
@@ -178,6 +176,7 @@ a.btn--yellow.btn--border-dotted:hover {
   font-size: 30px;
   text-align: center;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .fa-volume-up {
@@ -186,4 +185,12 @@ a.btn--yellow.btn--border-dotted:hover {
   position: absolute;
   top: 5px;
   right: 5%;
+}
+
+.Aa {
+  color: #EE0000;
+}
+
+.Bb {
+  color: blue;
 }

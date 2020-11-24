@@ -1,9 +1,8 @@
-function audioPractice() {
-  var $elementReference = document.getElementById( "audio-1" );
+function audioAlphabet() {
+  var $elementReference = document.getElementById( "audio-alphabet" );
   $elementReference.play();
 }
-
-function audioAlphabet() {
-  var $elementReference = document.getElementById( "audio" );
+function audioPractice() {
+  var $elementReference = document.getElementById( "audio-practice" );
   $elementReference.play();
 }
