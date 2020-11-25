@@ -13,22 +13,8 @@
         <h2><%= practice.name %></h2>
       </div>
     <% end %>
-    <%= audio_tag("#{@alphabet.sound}", id:"audio-alphabet") %>
-    <% @practices.each do |practice| %>
-      <%= audio_tag("#{practice.sound}", id:"audio-practice") %>
-    <% end %>
-    <div class="button-area">
-      <div class="previous-page">
-        <%= link_to practice_path(previous_page(@alphabet)) do %>
-          <%= image_tag "arrow-left.png" %>
-        <% end %>
-      </div>
-      <div class="next-page">
-        <%= link_to practice_path(next_page(@alphabet)) do %>
-          <%= image_tag "arrow-right.png" %>
-        <% end %>
-      </div>
-    </div>
+    <%= render 'audio_tag', alphabet: @alphabet, practices: @practices %>
+    <%= render 'button_area', alphabet: @alphabet %>
   </div>
 </div>
 <%= render 'layouts/footer' %>

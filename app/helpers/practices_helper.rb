@@ -7,4 +7,13 @@ module PracticesHelper
   def previous_page(alphabet)
     alphabet.id - 1
   end
+
+  def first_page?(alphabet)
+    alphabet.id == 1
+  end
+
+  def last_page?(alphabet)
+    last = 2
+    alphabet.id == last
+  end
 end

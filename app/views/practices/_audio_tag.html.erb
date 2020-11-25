@@ -1,0 +1,4 @@
+<%= audio_tag("#{alphabet.sound}", id:"audio-alphabet") %>
+<% practices.each do |practice| %>
+  <%= audio_tag("#{practice.sound}", id:"audio-practice") %>
+<% end %>

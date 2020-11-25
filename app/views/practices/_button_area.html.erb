@@ -1,0 +1,16 @@
+<div class="button-area">
+  <% unless first_page?(alphabet) %>
+    <div class="previous-page">
+      <%= link_to practice_path(previous_page(alphabet)) do %>
+        <%= image_tag "arrow-left.png" %>
+      <% end %>
+    </div>
+  <% end %>
+  <% unless last_page?(alphabet) %>
+    <div class="next-page">
+      <%= link_to practice_path(next_page(alphabet)) do %>
+        <%= image_tag "arrow-right.png" %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
