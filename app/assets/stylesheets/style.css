@@ -187,6 +187,21 @@ a.btn--yellow.btn--border-dotted:hover {
   right: 5%;
 }
 
+.button-area {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.previous-page {
+  float: left;
+  width: 50%;
+}
+
+.next-page {
+  float: right;
+  width: 50%;
+}
 .Aa {
   color: #EE0000;
 }
