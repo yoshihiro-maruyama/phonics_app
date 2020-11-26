@@ -13,7 +13,7 @@ module PracticesHelper
   end
 
   def last_page?(alphabet)
-    last = 2
+    last = 26
     alphabet.id == last
   end
 end

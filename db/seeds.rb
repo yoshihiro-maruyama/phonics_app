@@ -4,6 +4,78 @@ Alphabet.create!(id: 1,
 Alphabet.create!(id: 2,
                  name: "Bb",
                  sound: "Bb.mp3")
+Alphabet.create!(id: 3,
+                 name: "Cc",
+                 sound: "Cc.mp3")
+Alphabet.create!(id: 4,
+                 name: "Dd",
+                 sound: "Dd.mp3")
+Alphabet.create!(id: 5,
+                 name: "Ee",
+                 sound: "Ee.mp3")
+Alphabet.create!(id: 6,
+                 name: "Ff",
+                 sound: "Ff.mp3")
+Alphabet.create!(id: 7,
+                 name: "Gg",
+                 sound: "Gg.mp3")
+Alphabet.create!(id: 8,
+                 name: "Hh",
+                 sound: "Hh.mp3")
+Alphabet.create!(id: 9,
+                 name: "Ii",
+                 sound: "Ii.mp3")
+Alphabet.create!(id: 10,
+                 name: "Jj",
+                 sound: "Jj.mp3")
+Alphabet.create!(id: 11,
+                 name: "Kk",
+                 sound: "Kk.mp3")
+Alphabet.create!(id: 12,
+                 name: "Ll",
+                 sound: "Ll.mp3")
+Alphabet.create!(id: 13,
+                 name: "Mm",
+                 sound: "Mm.mp3")
+Alphabet.create!(id: 14,
+                 name: "Nn",
+                 sound: "Nn.mp3")
+Alphabet.create!(id: 15,
+                 name: "Oo",
+                 sound: "Oo.mp3")
+Alphabet.create!(id: 16,
+                 name: "Pp",
+                 sound: "Pp.mp3")
+Alphabet.create!(id: 17,
+                 name: "Qq",
+                 sound: "Qq.mp3")
+Alphabet.create!(id: 18,
+                 name: "Rr",
+                 sound: "Rr.mp3")
+Alphabet.create!(id: 19,
+                 name: "Ss",
+                 sound: "Ss.mp3")
+Alphabet.create!(id: 20,
+                 name: "Tt",
+                 sound: "Tt.mp3")
+Alphabet.create!(id: 21,
+                 name: "Uu",
+                 sound: "Uu.mp3")
+Alphabet.create!(id: 22,
+                 name: "Vv",
+                 sound: "Vv.mp3")
+Alphabet.create!(id: 23,
+                 name: "Ww",
+                 sound: "Ww.mp3")
+Alphabet.create!(id: 24,
+                 name: "Xx",
+                 sound: "Xx.mp3")
+Alphabet.create!(id: 25,
+                 name: "Yy",
+                 sound: "Yy.mp3")
+Alphabet.create!(id: 26,
+                 name: "Zz",
+                 sound: "Zz.mp3")
 
 Practice.create!(alphabet_id: 1, 
                  name: "apple", 
@@ -13,3 +85,99 @@ Practice.create!(alphabet_id: 2,
                  name: "baseball", 
                  image: "baseball.png", 
                  sound: "baseball.mp3")
+Practice.create!(alphabet_id: 3, 
+                 name: "car", 
+                 image: "car.png", 
+                 sound: "car.mp3")
+Practice.create!(alphabet_id: 4, 
+                 name: "desk", 
+                 image: "desk.png", 
+                 sound: "desk.mp3")
+Practice.create!(alphabet_id: 5, 
+                 name: "elephant", 
+                 image: "elephant.png", 
+                 sound: "elephant.mp3")
+Practice.create!(alphabet_id: 6, 
+                 name: "fire", 
+                 image: "fire.png", 
+                 sound: "fire.mp3")
+Practice.create!(alphabet_id: 7, 
+                 name: "game", 
+                 image: "game.png", 
+                 sound: "game.mp3")
+Practice.create!(alphabet_id: 8, 
+                 name: "house", 
+                 image: "house.png", 
+                 sound: "house.mp3")
+Practice.create!(alphabet_id: 9, 
+                 name: "interview", 
+                 image: "interview.png", 
+                 sound: "interview.mp3")
+Practice.create!(alphabet_id: 10, 
+                 name: "jack-o-lantern", 
+                 image: "jack-o-lantern.png", 
+                 sound: "jack-o-lantern.mp3")
+Practice.create!(alphabet_id: 11, 
+                 name: "king", 
+                 image: "king.png", 
+                 sound: "king.mp3")
+Practice.create!(alphabet_id: 12, 
+                 name: "lion", 
+                 image: "lion.png", 
+                 sound: "lion.mp3")
+Practice.create!(alphabet_id: 13, 
+                 name: "machine", 
+                 image: "machine.png", 
+                 sound: "machine.mp3")
+Practice.create!(alphabet_id: 14, 
+                 name: "nose", 
+                 image: "nose.png", 
+                 sound: "nose.mp3")
+Practice.create!(alphabet_id: 15, 
+                 name: "octopus", 
+                 image: "octopus.png", 
+                 sound: "octopus.mp3")
+Practice.create!(alphabet_id: 16, 
+                 name: "police", 
+                 image: "police.png", 
+                 sound: "police.mp3")
+Practice.create!(alphabet_id: 17, 
+                 name: "question", 
+                 image: "question.png", 
+                 sound: "question.mp3")
+Practice.create!(alphabet_id: 18, 
+                 name: "rock", 
+                 image: "rock.png", 
+                 sound: "rock.mp3")
+Practice.create!(alphabet_id: 19, 
+                 name: "scientist", 
+                 image: "scientist.png", 
+                 sound: "scientist.mp3")
+Practice.create!(alphabet_id: 20, 
+                 name: "teacher", 
+                 image: "teacher.png", 
+                 sound: "teacher.mp3")
+Practice.create!(alphabet_id: 21, 
+                 name: "umbrella", 
+                 image: "umbrella.png", 
+                 sound: "umbrella.mp3")
+Practice.create!(alphabet_id: 22, 
+                 name: "victory", 
+                 image: "victory.png", 
+                 sound: "victory.mp3")
+Practice.create!(alphabet_id: 23, 
+                 name: "whale", 
+                 image: "whale.png", 
+                 sound: "whale.mp3")
+Practice.create!(alphabet_id: 24, 
+                 name: "x-ray", 
+                 image: "x-ray.png", 
+                 sound: "x-ray.mp3")
+Practice.create!(alphabet_id: 25, 
+                 name: "yummy", 
+                 image: "yummy.png", 
+                 sound: "yummy.mp3")
+Practice.create!(alphabet_id: 26, 
+                 name: "zebra", 
+                 image: "zebra.png", 
+                 sound: "zebra.mp3")
