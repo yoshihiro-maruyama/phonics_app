@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
   get '/about', to: 'static_pages#about'
-  resources :practices, only: [:show]
+  resources :practices, only: [:index, :show]
 end

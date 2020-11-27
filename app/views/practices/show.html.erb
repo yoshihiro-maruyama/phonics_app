@@ -1,7 +1,6 @@
-<% provide(:title, "#{@alphabet.name}") %>
-<div class="practice-page-wrapper">
-  <div class="container">
-    <%= render 'layouts/header' %>
+<% provide(:title, "Practice") %>
+<div class="wrapper">
+  <div class="practice-wrapper">
     <div class="alphabet" onclick="audioAlphabet();">
       <i class="fas fa-volume-up"></i>
       <h1 class="<%= @alphabet.name %>"><%= @alphabet.name %></h1>
@@ -13,8 +12,7 @@
         <h2><%= practice.name %></h2>
       </div>
     <% end %>
-    <%= render 'audio_tag', alphabet: @alphabet, practices: @practices %>
-    <%= render 'button_area', alphabet: @alphabet %>
   </div>
+  <%= render 'audio_tag', alphabet: @alphabet, practices: @practices %>
+  <%= render 'button_area', alphabet: @alphabet %>
 </div>
-<%= render 'layouts/footer' %>

@@ -1,0 +1,12 @@
+<% provide(:title, "Index") %>
+<div class="wrapper">
+  <div class="index-wrapper">
+    <% @alphabets.each do |alphabet| %>
+      <%= link_to practice_path(alphabet.id) do %>
+        <div class="index-alphabet-box">
+          <p class="<%= alphabet.name %>"><%= alphabet.name %></p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;/*rem算出をしやすくするために*/
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn,
 a.btn,
 button.btn {
@@ -44,8 +48,17 @@ ul {
   list-style: none;
 }
 
+li {
+  float: left;
+}
+
 .container {
-  padding: 0 10px 0 10px;
+  padding: 0 15px 0 15px;
+}
+
+.wrapper {
+  height: 550px;
+  /* background-color: skyblue; */
 }
 
 :root {
@@ -55,7 +68,7 @@ ul {
 
 /* header */
 header {
-  padding: 20px 0 10px 0;
+  height: 100px;
 }
 
 #logo {
@@ -64,13 +77,13 @@ header {
 
 #logo img {
   width: 100px;
+  padding-top: 5px;
 }
 
-.about {
+.header-nav li {
   font-size: 20px;
-  padding:10px 0 0 50px;
+  padding: 33px;
   font-family: var(--english);
-  text-decoration: none;
   color: purple;
 }
 
@@ -81,19 +94,19 @@ footer {
 }
 
 /* home page */
-.home-page-wrapper {
+.Home {
   background-image: url(abc-phonics-top.png);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 700px;
 }
 
 a.btn--yellow.btn--border-dotted {
   border: 3px dotted #000;
   background-color: yellow;
   font-family: var(--japanese);
-  margin-top: 350px;
-  margin-left: 280px;
+  margin-top: 320px;
+  margin-left: 370px;
   width: 250px;
 }
 
@@ -102,16 +115,16 @@ a.btn--yellow.btn--border-dotted:hover {
 }
 
 /* about page */
-.about-page-wrapper {
+.About {
   background-image: url(abc-phonics-about.png);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 700px;
 }
 
 .message-wrapper {
   width: 650px;
-  margin: 70px 0 50px 300px;
+  margin-left: 300px;
   font-family: var(--japanese);
   color: #252525;
 }
@@ -124,17 +137,44 @@ a.btn--yellow.btn--border-dotted:hover {
   font-size: 15px;
 }
 
-/* practice page */
-.practice-page-wrapper {
-  background-image: url(abc-phonics-practice.png);
-  width: 100%;
+/* index page */
+.Index {
+  background-image: url(abc-phonics-about.png);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+}
+
+.index-wrapper {
+  margin-left: 100px;
+}
+
+.index-alphabet-box {
+  background-color: white;
+  font-family: var(--english);
+  margin: 50px 50px 0 0;
+  width: 50px;
+  height: 50px;
+  float: left;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+/* practice page */
+.Practice {
+  background-image: url(abc-phonics-practice.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.practice-wrapper {
+  height: 400px;
 }
 
 .alphabet {
   background-color: white;
-  margin: 100px 50px 0 50px;
+  margin: 50px 50px 0 80px;
   width: 150px;
   height: 150px;
   float: left;
@@ -155,7 +195,7 @@ a.btn--yellow.btn--border-dotted:hover {
 .alphabet-image {
   background-color: white;
   display: inline-block;
-  margin: 100px 0 0 200px;
+  margin: 50px 0 0 200px;
   border-radius: 10px;
   width: 350px;
   padding: 10px;
