@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe "Practices page", type: :request do
-  let!(:alphabetA) { FactoryBot.create(:alphabetA) }
+  let(:alphabetA) { FactoryBot.create(:alphabetA) }
   let!(:practiceA) { FactoryBot.create(:practiceA, alphabet_id: alphabetA.id) }
-  let!(:alphabetB) { FactoryBot.create(:alphabetB) }
+  let(:alphabetB) { FactoryBot.create(:alphabetB) }
   let!(:practiceB) { FactoryBot.create(:practiceB, alphabet_id: alphabetB.id) }
 
   describe "GET /practices" do
