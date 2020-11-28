@@ -6,6 +6,7 @@ class PracticesController < ApplicationController
 
   def show
     @alphabet = Alphabet.find(params[:id])
+    @alphabet_count = Alphabet.all.count
     @practices = @alphabet.practices
   end
 end

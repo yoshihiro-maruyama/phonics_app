@@ -6,7 +6,7 @@
       <% end %>
     </div>
   <% end %>
-  <% unless last_page?(alphabet) %>
+  <% unless last_page?(alphabet, alphabet_count) %>
     <div class="next-page">
       <%= link_to practice_path(next_page(alphabet)) do %>
         <%= image_tag "arrow-right.png" %>
