@@ -58,7 +58,6 @@ li {
 
 .wrapper {
   height: 550px;
-  /* background-color: skyblue; */
 }
 
 :root {
@@ -95,18 +94,23 @@ footer {
 
 /* home page */
 .Home {
-  background-image: url(abc-phonics-top.png);
+  background-image: url(abc-phonics-home.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.home-wrapper {
+  text-align: center;
+  position: relative;
+  height: 500px;
+  padding-top: 60px;
 }
 
 a.btn--yellow.btn--border-dotted {
   border: 3px dotted #000;
   background-color: yellow;
   font-family: var(--japanese);
-  margin-top: 320px;
-  margin-left: 370px;
   width: 250px;
 }
 

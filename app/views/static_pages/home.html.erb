@@ -1,4 +1,7 @@
 <% provide(:title, "Home") %>
 <div class="wrapper">
-  <%= link_to "スタート！", practice_path(1), class:"btn btn--yellow btn--border-dotted" %>
+  <div class="home-wrapper">
+    <%= image_tag "abc-phonics-logo.png", class: "center-logo" %>
+    <p><%= link_to "スタート！", practice_path(1), class:"btn btn--yellow btn--border-dotted" %></p>
+  </div>
 </div>
