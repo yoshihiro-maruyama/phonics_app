@@ -20,6 +20,7 @@ RSpec.describe "Practices page", type: :request do
       expect(response.body).to include(practiceA.name)
     end
   end
+
   describe "first alphabet" do
     it "won't show previous page arrow" do
       get practice_path(alphabetA)
@@ -30,6 +31,7 @@ RSpec.describe "Practices page", type: :request do
       expect(Capybara.string(response.body)).to have_selector ".next-page"
     end
   end
+
   describe "last alphabet" do
     it "won't show next page arrow" do
       get practice_path(alphabetB)

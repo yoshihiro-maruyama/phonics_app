@@ -1,5 +1,4 @@
 module PracticesHelper
-
   def next_page(alphabet)
     alphabet.id + 1
   end

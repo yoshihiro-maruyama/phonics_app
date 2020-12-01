@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Index page", type: :request do
-  let!(:alphabet) {FactoryBot.create(:alphabet)}
+  let!(:alphabet) { FactoryBot.create(:alphabet) }
 
   describe "GET /index" do
     it "responds successfully" do

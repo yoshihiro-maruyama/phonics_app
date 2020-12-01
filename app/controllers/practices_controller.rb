@@ -1,5 +1,4 @@
 class PracticesController < ApplicationController
-
   def index
     @alphabets = Alphabet.all
   end
