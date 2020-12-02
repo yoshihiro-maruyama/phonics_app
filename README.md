@@ -1,24 +1,32 @@
-# README
+# ABC Phonics
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ This is a practices for learn phonics.
+ Phonics is a best practice to first alphabet learner.
 
-Things you may want to cover:
+## DEMO
 
-* Ruby version
+ First, click and listen sound. then repeat after by yourself.
+ If you get used to, say first and listen sound after.
 
-* System dependencies
+ ![practice-demo](https://user-images.githubusercontent.com/57389720/100820069-caf63480-3490-11eb-96c6-3c2753c682cc.png)
 
-* Configuration
+## Features
+ 
+You can learn phonics fun with pop design.
+ 
+## Requirement
 
-* Database creation
+* ruby 2.5.3
+* rails 5.2.2
+* audiojs-rails
+ 
+## Author
 
-* Database initialization
+* Yoshihiro Maruyama
+* y.maruyama0008@gmail.com
+ 
+## License
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ "ABC Phonics" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+ Enjoy your English life and have fun!
+ Thank you.
