@@ -1,7 +1,7 @@
 version: 2
  
 jobs:
-  rpsec:
+  rspec:
     docker:
       - image: circleci/ruby:2.5.3
     working_directory: ~/phonics_app
