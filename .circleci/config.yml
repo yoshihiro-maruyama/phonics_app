@@ -15,4 +15,4 @@ workflows:
   version: 2
   workflows:
     jobs:
-      - test
+      - rspec
