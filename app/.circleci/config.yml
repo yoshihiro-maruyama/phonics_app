@@ -1,0 +1,18 @@
+version: 2
+ 
+jobs:
+  rpsec:
+    docker:
+      - image: circleci/ruby:2.5.3
+    working_directory: ~/phonics_app
+    steps:
+      - checkout
+      - run:
+          name: Run rspec
+          command: docker-compose run web rspec
+ 
+workflows:
+  version: 2
+  workflows:
+    jobs:
+      - test
