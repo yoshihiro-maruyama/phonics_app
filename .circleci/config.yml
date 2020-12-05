@@ -17,6 +17,7 @@ jobs:
     working_directory: ~/phonics_app
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: Run rubocop
           command: docker-compose run web rubocop --require rubocop-airbnb
