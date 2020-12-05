@@ -7,9 +7,10 @@ jobs:
     working_directory: ~/phonics_app
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: Run rspec
-          command: sudo docker-compose run web rspec
+          command: docker-compose run web rspec
  
 workflows:
   version: 2
