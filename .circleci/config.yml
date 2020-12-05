@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: Run rspec
-          command: docker-compose run web rspec
+          command: sudo docker-compose run web rspec
  
 workflows:
   version: 2
