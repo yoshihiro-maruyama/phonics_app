@@ -27,4 +27,6 @@ workflows:
   workflows:
     jobs:
       - rspec
-      - rubocop
+      - rubocop:
+          requires:
+            - rspec
