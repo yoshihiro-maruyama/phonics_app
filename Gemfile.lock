@@ -50,6 +50,7 @@ GEM
     ast (2.4.1)
     audiojs-rails (1.0.1)
       railties (>= 3.1)
+    bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.5.0)
       msgpack (~> 1.0)
@@ -247,6 +248,7 @@ PLATFORMS
 
 DEPENDENCIES
   audiojs-rails
+  bcrypt (= 3.1.13)
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
