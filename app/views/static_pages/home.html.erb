@@ -1,9 +1,11 @@
-<% provide(:title, "Home") %>
-<div class="wrapper">
-  <div class="home-wrapper">
-    <%= image_tag "abc-phonics-logo.png", class: "center-logo" %>
-    <p><%= link_to "スタート！", practice_path(1), class:"btn btn--yellow btn--border-dotted" %></p>
-    <p><%= link_to "sign up", signup_path, class:"btn" %></p>
-    <p><%= link_to "log in", login_path, class:"btn" %></p>
+<% if logged_in? %>
+  <%= render 'users/show' %>
+<% else %>
+  <% provide(:title, "Home") %>
+  <div class="wrapper">
+    <div class="home-wrapper">
+      <%= image_tag "abc-phonics-logo.png", class: "center-logo" %>
+      <p><%= link_to "スタート！", practice_path(1), class:"btn btn--yellow btn--border-dotted" %></p>
+    </div>
   </div>
-</div>
+<% end %>
