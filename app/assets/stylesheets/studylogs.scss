@@ -1,0 +1,49 @@
+// Place all the styles related to the studylogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.simple-calendar {
+
+  .calendar-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .calendar-title {
+    margin: 0 20px 0 20px;
+  }
+
+  table {
+    border: 0px;
+  }
+
+  th {
+    border: 0px;
+  }
+
+  .day {
+    height: 43px;
+    border-color: white;
+    border-radius: 20px;
+    border-width: 3px;
+  }
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+  .today {
+    background-color: white;
+  }
+  .past {}
+  .future {}
+  .start-date {}
+  .prev-month {}
+  .next-month { }
+  .current-month {}
+  .has-events {
+    background-color: #BEF4F3;
+  }
+ }
+ 

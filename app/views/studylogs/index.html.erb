@@ -1,0 +1,18 @@
+
+<h1>calender</h1>
+<div class="calender-box">
+  <div class="calender">
+    <%= month_calendar events: @studylogs do |date, studylogs| %>
+      <%= date.day %>
+    <% end %>
+  </div>
+</div>
+
+
+<%= form_with(model: @studylog, local: true) do |form| %>
+
+  <div class="submit">
+    <%= form.submit %>
+  </div>
+
+<% end %>

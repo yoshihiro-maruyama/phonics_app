@@ -15,10 +15,14 @@
       </div>
     </div>
     <div class="calender-box">
-
+      <div class="calender">
+        <%= month_calendar events: @studylogs do |date, studylogs| %>
+          <%= date.day %>
+        <% end %>
+      </div>
     </div>
     <div class="user-page-start-button">
-      <p><%= link_to "スタート！", practice_path(1), class:"btn btn--yellow btn--border-dotted" %></p>
+      <p><%= link_to "スタート！", @studylog, method: :post  , class:"btn btn--yellow btn--border-dotted" %></p>
     </div>
   </div>
 </div>

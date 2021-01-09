@@ -5,6 +5,7 @@ ruby '2.5.3'
 
 gem 'rails', '~> 5.2.2'
 gem 'bcrypt', '3.1.13'
+gem 'simple_calendar'
 gem 'audiojs-rails'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 gem 'puma', '~> 3.11'

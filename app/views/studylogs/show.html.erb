@@ -1,0 +1,14 @@
+
+<p>
+  <strong>log</strong>
+  <%= @studylog.log %>
+</p>
+
+<p>
+  <strong>時間</strong>
+  <%= @studylog.start_time %>
+</p>
+
+<%= link_to 'Edit', edit_studylog_path(@studylog) %> |
+<%= link_to 'Back', studylogs_path %>
+<%= link_to "Delete", @studylog, method: :delete %>

@@ -251,6 +251,20 @@ form {
   height: 300px;
   width: 400px;
   margin-left: 600px;
+  position: relative;
+}
+
+.calender {
+  background-color: white;
+  border-radius: 10px;
+  width: 380px;
+  height: 280px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
 }
 
 .user-page-start-button {

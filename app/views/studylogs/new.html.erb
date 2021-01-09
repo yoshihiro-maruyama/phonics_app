@@ -1,0 +1,10 @@
+<%= form_with(model: @studylog, local: true) do |form| %>
+
+  <%= form.text_field :log %>
+  <%= form.text_field :start_time %>
+
+  <div class="submit">
+    <%= form.submit %>
+  </div>
+
+<% end %>
