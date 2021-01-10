@@ -8,4 +8,5 @@ class User < ApplicationRecord
   def feed
     Studylog.where("user_id = ?", id)
   end
+
 end

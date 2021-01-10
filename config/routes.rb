@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
+  post '/guest', to: 'sessions#guest'
   resources :users
   resources :practices, only: [:index, :show]
   get 'studylogs/index'

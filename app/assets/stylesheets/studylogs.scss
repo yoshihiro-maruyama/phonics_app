@@ -26,24 +26,19 @@
     border-radius: 20px;
     border-width: 3px;
   }
-  .wday-0 {}
-  .wday-1 {}
-  .wday-2 {}
-  .wday-3 {}
-  .wday-4 {}
-  .wday-5 {}
-  .wday-6 {}
-  .today {
-    background-color: white;
+
+  .prev-month {
+    opacity: 0;
   }
-  .past {}
-  .future {}
-  .start-date {}
-  .prev-month {}
-  .next-month { }
-  .current-month {}
+  .next-month {
+    opacity: 0;
+  }
+
+  .today {
+    background-color: #F8F7F7;
+  }
+
   .has-events {
     background-color: #BEF4F3;
   }
  }
- 

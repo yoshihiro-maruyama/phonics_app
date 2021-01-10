@@ -1,3 +1,27 @@
+user = User.create!(id: 1,
+                    name: "ゲスト",
+                    password: "foobar")
+user.studylogs.create!(log: 1,
+                       start_time: Time.zone.now.ago(2.days))
+user.studylogs.create!(log: 1,
+                       start_time: Time.zone.now.ago(3.days))
+user.studylogs.create!(log: 1,
+                       start_time: Time.zone.now.ago(5.days))
+user.studylogs.create!(log: 1,
+                       start_time: Time.zone.now.ago(7.days))
+user.studylogs.create!(log: 1,
+                       start_time: Time.zone.now.ago(11.days))
+user.studylogs.create!(log: 1,
+                       start_time: Time.zone.now.ago(13.days))
+user.studylogs.create!(log: 1,
+                       start_time: Time.zone.now.ago(17.days))
+user.studylogs.create!(log: 1,
+                       start_time: Time.zone.now.ago(19.days))
+user.studylogs.create!(log: 1,
+                       start_time: Time.zone.now.ago(23.days))
+user.studylogs.create!(log: 1,
+                       start_time: Time.zone.now.ago(31.days))
+
 Alphabet.create!(id: 1,
                  name: "Aa",
                  sound: "Aa.mp3")

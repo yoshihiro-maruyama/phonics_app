@@ -5,11 +5,13 @@
     <% end %>
     <nav>
       <ul class="header-nav">
+      <% if logged_in? %>
+        <li><%= link_to "Logout", logout_path, method: :delete, class: "about" %></li>
+      <% else %>
+        <li><%= link_to "Login", login_path, class: "about" %></li>
+      <% end %>
         <li><%= link_to "About", about_path, class: "about" %></li>
         <li><%= link_to "Index", practices_path, class: "about" %></li>
-        <% unless logged_in? %>
-          <li><%= link_to "log in", login_path, class:"about" %></li>
-        <% end %>
       </ul>
     </nav>
   </div>

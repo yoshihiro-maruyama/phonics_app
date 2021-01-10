@@ -1,21 +1,27 @@
 <% provide(:title, 'Log in') %>
 
-<div class="form-wrapper">
-  <h1>Log In</h1>
-  <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
-  <form>
-    <div class="form-item">
-      <%= f.text_field :name, :placeholder => "Name" %>
+<div class="login-wrapper">
+  <div class="form-wrapper">
+    <h1>Log In</h1>
+    <% flash.each do |message_type, message| %>
+      <div class="alert"><%= message %></div>
+    <% end %>
+    <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+    <form>
+      <div class="form-item">
+        <%= f.text_field :name, :placeholder => "Name" %>
+      </div>
+      <div class="form-item">
+        <%= f.password_field :password, :placeholder => "Password" %>
+      </div>
+      <div class="button-panel">
+        <%= f.submit "Log in", class:"button" %>
+      </div>
+    </form>
+    <% end %>
+    <div class="form-footer">
+      <p><%= link_to "ゲストログイン", guest_path, method: :post, class: "guest" %></p>
+      <p><%= link_to "Sign up now", signup_path %></p></p>
     </div>
-    <div class="form-item">
-      <%= f.password_field :password, :placeholder => "Password" %>
-    </div>
-    <div class="button-panel">
-      <%= f.submit "Log in", class:"button" %>
-    </div>
-  </form>
-  <% end %>
-  <div class="form-footer">
-    <p><%= link_to "Sign up now", signup_path %></p></p>
   </div>
 </div>

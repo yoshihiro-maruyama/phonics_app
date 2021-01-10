@@ -1,6 +1,4 @@
 class SessionsController < ApplicationController
-  def new
-  end
 
   def create
     user = User.find_by(name: params[:session][:name])
@@ -8,7 +6,7 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to root_path
     else
-    flash[:danger] = 'パスワードか名前が違います'
+    flash.now[:danger] = '※パスワードか名前が違います'
     render 'new'
     end
   end
@@ -16,5 +14,15 @@ class SessionsController < ApplicationController
   def destroy
     log_out
     redirect_to root_url
+  end
+
+  def guest
+    user = User.find_by(name: "ゲスト")
+    if user.nil?
+    redirect_to root_path
+    else
+      log_in user
+      redirect_to root_path
+    end
   end
 end

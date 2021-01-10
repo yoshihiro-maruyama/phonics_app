@@ -22,4 +22,12 @@ module SessionsHelper
   def current_user?(user)
     user && user == current_user
   end
+
+  def guest_user
+    User.find_by(name: "ゲスト")
+  end
+
+  def guest_user?(user)
+    user && user == guest_user
+  end
 end
