@@ -1,11 +1,10 @@
 class StudylogsController < ApplicationController
-
   def create
     @studylog = current_user.studylogs.build(log: 1, start_time: Time.zone.now)
     if @studylog.save
       redirect_to practice_path(1)
     else
-      render studylogs_path
+      render root_path
     end
   end
 

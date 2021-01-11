@@ -1,5 +1,7 @@
 FactoryBot.define do
   factory :studylog do
-    user { nil }
+    user { :owner }
+    log { 1 }
+    start_time { Time.zone.now }
   end
 end
